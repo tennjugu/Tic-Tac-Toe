@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .gameboard{
     height: 350px;
     width: 350px;
@@ -18,11 +19,19 @@
 
 .gamebox{
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    cursor: pointer;
 }
 
+.play-status{
+    margin-top: 30px;
+}
 button{
     height: 30px;
-    width: 70px; 
+    width: 100px; 
     margin: 10px;
 }
 

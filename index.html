@@ -10,29 +10,25 @@
     <div class="container">
         <h1>Tic Tac Toe</h1>
         <div class="gameboard">
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
-            <div class="gamebox"></div>
+            <div class="gamebox" data-boxIndex= "0"></div>
+            <div class="gamebox" data-boxIndex= "1"></div>
+            <div class="gamebox" data-boxIndex= "2"></div>
+            <div class="gamebox" data-boxIndex= "3"></div>
+            <div class="gamebox" data-boxIndex= "4"></div>
+            <div class="gamebox" data-boxIndex= "5"></div>
+            <div class="gamebox" data-boxIndex= "6"></div>
+            <div class="gamebox" data-boxIndex= "7"></div>
+            <div class="gamebox" data-boxIndex= "8"></div>
         </div>
-        <div class="winner"></div>
-        <button>Start</button>
+        <h2 class="play-status"></h2>
+        <button class="btn">Restart</button>
         <div class="controls">
             <div class="player-one">
-                <input type="text" id="player-one" placeholder="player-one (X)">
+                <input type="text" id="player-one" placeholder="player-one (X)" disabled>
                 <p class="player-one-score"></p>
             </div>
-            <div class="tie">
-                <p id="tie">Tie</p>
-                <p class="tie-score"></p>
-            </div>
             <div class="player-two">
-                <input type="text" id="player-two" placeholder="player-two (O)">
+                <input type="text" id="player-two" placeholder="player-two (O)" disabled>
                 <p class="player-two-score"></p>
             </div>
         </div>

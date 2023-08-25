@@ -45,6 +45,44 @@ const gameModule = (function() {
         gameProgress.textContent = `${currentPlayer}'s turn`;
     }
 
+    function checkWinner() {
+        let roundWon = false;
+    
+        for (let i = 0; i < winConditions.length; i++) {
+            const condition = winConditions[i];
+            const firstbox = gameArray[condition[0]];
+            const secondbox = gameArray[condition[1]];
+            const thirdbox = gameArray[condition[2]];
+    
+            if (firstbox === '' || secondbox === '' || thirdbox === '') {
+                continue;
+            }
+            if (firstbox === secondbox && secondbox === thirdbox) {
+                roundWon = true;
+                break;
+            }
+        } 
+    
+        if (roundWon) {
+            gameProgress.textContent = `${currentPlayer} wins!`;
+            gameStatus = false;
+        } 
+        else if (!gameArray.includes('')) {
+            gameProgress.textContent = `Draw!`;
+            gameStatus = false;
+        }
+        else {
+            changePlayer();
+        }
+    }
+
+    function gameRestart() {
+        currentPlayer = 'X';
+        gameArray = ['', '', '', '', '', '', '', '', ''];
+        gameProgress.textContent = `${currentPlayer}'s turn`;
+        gameBoxes.forEach(box => box.textContent = '');
+        gameStatus = true;
+    }
 
     return {
         startGame: startGame
