@@ -3,7 +3,7 @@
 This Tic Tac Toe project is part of [The Odin Project](https://www.theodinproject.com/) curriculum. It serves as a way to assess my understanding of Immediately Invoked Function Expressions (IIFE) and modular patterns in JavaScript. Through this project, I've aimed to demonstrate my ability to create a functional and interactive game while employing a modular approach to code organization.
 
 ## Demo
-![Tic Tac Toe Demo](./media/screen-capture.webm)
+![Tic Tac Toe Demo](./media/screen-capture.gif)
 
 ## Technologies Used
 
